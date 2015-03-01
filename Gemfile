@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "figaro"
 
 # For using twitch API
-gem 'twitch', '= 0.0.2'
+gem 'twitch'
 
 group :development, :test do
 

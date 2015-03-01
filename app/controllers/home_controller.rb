@@ -9,7 +9,6 @@ class HomeController < ActionController::Base
     #   :scope => ["user_read", "channel_read", "user_follows_edit"]
     # })
     @twitch = Twitch.new()
-    # @data = @twitch.getTopGames()
     @data = @twitch.getTopGames()[:body]['top']
   end
 end
