@@ -1,0 +1,22 @@
+List of Top Games on twitch.tv
+<% @data.each do |game| %>
+  
+  <table class="table table-striped">
+
+    <tr>
+      <th>Name</th>
+      <th>Viewers</th>
+      <th>Channels</th>
+      <th></th>
+    </tr>
+  
+    <tr>
+      <td>game['game']['name']</td>
+      <td>game['viewers']</td>
+      <td>game['channels']</td>
+      <td>game['game']['box']['large']</td>
+    </tr>
+  
+  </table> 
+
+<% end %>
